@@ -8,8 +8,8 @@ RSpec.feature "Listing Exercises" do
 
     login_as(@john)
 
-    @e1 = @john.exercises.create(duration_in_min: 20, workout: "Body building routine", workout_date: "2016-08-29")
-    @e2 = @john.exercises.create(duration_in_min: 10, workout: "Cardio", workout_date: "2016-08-28")
+    @e1 = @john.exercises.create(duration_in_min: 20, workout: "Body building routine", workout_date: Date.today)
+    @e2 = @john.exercises.create(duration_in_min: 10, workout: "Cardio", workout_date: Date.today)
 
   end
 
